@@ -1,25 +1,24 @@
 //@vitorPaulon
 let nomeDoHeroi = "SuperVitor";
-let xp = 15000;
+let vitorias = 500;
 
-function calculadoraDeXP(acoesConcluidas){
-
-    if (xp <= 1000){
+function calculadoraPartidas(vitorias){
+    if (vitorias <= 10){
     return `O Herói de nome ${nomeDoHeroi} está no nível de Ferro`
-    }else if (xp <= 2000){
+    }else if (vitorias <= 20){
         return `O Herói de nome ${nomeDoHeroi} está no nível de Bronze`
-    }else if (xp <= 5000){
+    }else if (vitorias <= 50){
         return `O Herói de nome ${nomeDoHeroi} está no nível de Prata`
-    }else if (xp <= 7000){
+    }else if (vitorias <= 80){
         return `O Herói de nome ${nomeDoHeroi} está no nível de Ouro`
-    }else if (xp <= 8000){
+    }else if (vitorias <= 90){
         return `O Herói de nome ${nomeDoHeroi} está no nível de Platina`
-    }else if (xp <= 9000){
+    }else if (vitorias <= 100){
         return `O Herói de nome ${nomeDoHeroi} está no nível de Ascendente`
-    }else if (xp <= 10000){
+    }else if (vitorias <= 200){
         return `O Herói de nome ${nomeDoHeroi} está no nível de Imortal`
     }else{
         return `O Herói de nome ${nomeDoHeroi} está no nível de Supremo`   
     }
 }
-console.log(calculadoraDeXP(xp));
+console.log(calculadoraPartidas(vitorias));
