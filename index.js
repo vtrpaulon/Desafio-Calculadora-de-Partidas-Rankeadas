@@ -1,24 +1,26 @@
 //@vitorPaulon
 let nomeDoHeroi = "SuperVitor";
 let vitorias = 500;
+let derrotas = 150;
+let ranking = vitorias - derrotas;
 
-function calculadoraPartidas(vitorias){
-    if (vitorias <= 10){
+function calculadoraPartidas(ranking){
+    if (ranking <= 10){
     return `O Herói de nome ${nomeDoHeroi} está no nível de Ferro`
-    }else if (vitorias <= 20){
+    }else if (ranking <= 20){
         return `O Herói de nome ${nomeDoHeroi} está no nível de Bronze`
-    }else if (vitorias <= 50){
+    }else if (ranking <= 50){
         return `O Herói de nome ${nomeDoHeroi} está no nível de Prata`
-    }else if (vitorias <= 80){
+    }else if (ranking <= 80){
         return `O Herói de nome ${nomeDoHeroi} está no nível de Ouro`
-    }else if (vitorias <= 90){
+    }else if (ranking <= 90){
         return `O Herói de nome ${nomeDoHeroi} está no nível de Platina`
-    }else if (vitorias <= 100){
+    }else if (ranking <= 100){
         return `O Herói de nome ${nomeDoHeroi} está no nível de Ascendente`
-    }else if (vitorias <= 200){
+    }else if (ranking <= 200){
         return `O Herói de nome ${nomeDoHeroi} está no nível de Imortal`
     }else{
         return `O Herói de nome ${nomeDoHeroi} está no nível de Supremo`   
     }
 }
-console.log(calculadoraPartidas(vitorias));
+console.log(calculadoraPartidas(ranking));
